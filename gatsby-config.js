@@ -3,7 +3,7 @@ module.exports = {
     title: `SSAM`,
     description: `Este es el portafolio personal de Steven Sebastian Araujo Moran.`,
     author: `stevenaraujo98`,
-    siteUrl: `https://www.stevenaraujo98.ec`,
+    siteUrl: `https://www.stevenaraujo98.github.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,11 +24,11 @@ module.exports = {
         start_url: `/`,
         background_color: `#000`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         colors: {
           primary: "tomato",
         },
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo11.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

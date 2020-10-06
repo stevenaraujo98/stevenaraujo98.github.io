@@ -1,5 +1,41 @@
 @import '~antd/dist/antd.css';
 
+/* ******Colors ****** */
+/* primary: #1c9c58*/
+/* secundary: #11BECF*/
+/* error: #C2444D*/
+/* background: #1F3436*/
+/* info: #CF117C*/
+/* warning: #D1CF5A */
+/* sucess: #439BD1 */
+.colorPrimary
+{
+  color: #1c9c58;
+}
+.colorSecundary
+{
+  color: #11BECF;
+}
+.colorError
+{
+  color: #C2444D;
+}
+.colorBackground
+{
+  color: #1F3436;
+}
+.colorInfo
+{
+  color: #CF117C;
+}
+.colorWarning
+{
+  color: #D1CF5A;
+}
+.colorSucess
+{
+  color: #439BD1;
+}
 *
 {
   margin: 0;
@@ -10,15 +46,165 @@
 {
   padding: 0 !important;
 }
-.cardRightTitle
+.ant-card-bordered
 {
-  padding: 20px;
+  border: none !important;
+}
+
+
+@media (max-width: 500px) {
+  .cards 
+  {
+    width: 80% !important;
+  }
+}
+@media (max-width: 767px) {
+  .cardTitle
+  {
+    border-radius: 10px 10px 0 0px !important;
+  }
+}
+
+
+@media (max-height: 400px){
+  .parallax1 
+  {
+    height: 200vh !important;
+  }
+  .parallax2
+  {
+    height: 270vh !important;
+  }
+}
+@media (max-height: 500px) and (min-height: 400px){
+  .parallax1 
+  {
+    height: 150vh !important;
+  }
+  .parallax2
+  {
+    height: 220vh !important;
+  }
+}
+@media (max-height: 600px) and (min-height: 500px) {
+  .parallax1 
+  {
+    height: 120vh !important;
+  }
+}
+
+
+.parallax1
+{
+  height: 100vh;
+  display: flex;
+  justify-content: center;/*horizontal*/
+  align-items: center;/*vertical*/
+}
+.parallax2
+{  
+  display: flex;
+  justify-content: center;/*horizontal*/
+  align-items: center;/*vertical*/
+}
+.parallax-completo
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;/*DA ese efecto de que sube el resto*/
+  display: flex;
+  justify-content: center;/*horizontal*/
+  align-items: center;/*vertical*/
+}
+.parallax-2
+{
+  background-image: url('https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;/*horizontal*/
+  align-items: center;/*vertical*/
+  padding: 50px;
+}
+
+.cards
+{
+  /*
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  */
+  width: 50%;
+}
+.cardTitle
+{
+  border-radius: 10px 0px 0 10px;
+  box-shadow: 5px 5px 35px rgba(0, 0, 0, 1);
 }
 .cardLeftTitle
 {
-  box-shadow: 5px 5px 35px rgba(0, 0, 0, 1);
-  border: 5px;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px 0px 0px 10px;
+  width: 100vh;
 }
+.subCardLeftTitle
+{
+  background: #11BECF;
+  padding: 20px; 
+  border-radius: 10px 0 0 0px; 
+  text-align: center; 
+  /*textSizeAdjust:'40px';*/
+}
+.cardRightTitle
+{
+  padding: 30px;
+  align-content: center;
+  align-items: center;
+  
+}
+.cardRepo
+{
+  box-shadow: 5px 5px 35px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 70%;
+
+}
+.cardRepoU
+{
+  margin: 2px;
+  word-wrap: break-word; /* para que el texto largo se quede en el interior*/
+}
+.cardRepoU:hover
+{
+  box-shadow: 0px 2px 4px rgba(77, 75, 75, 0.658);
+}
+
+.redes
+{
+  color: black;
+  padding: 0 10px 0 10px;
+  transition: 0.5s;
+}
+.redes:hover
+{
+  color: #1c9c58;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  /*
+  padding: 0 9px 0 10px;
+  border: 1px solid red;
+  */
+  border-radius: 2px;
+  transform: scale(1.5);
+}
+
 /*
 html {
   -ms-text-size-adjust: 100%;
