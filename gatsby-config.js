@@ -4,6 +4,8 @@ module.exports = {
     description: `Este es el portafolio personal de Steven Sebastian Araujo Moran.`,
     author: `stevenaraujo98`,
     siteUrl: `https://www.stevenaraujo98.github.io`,
+    nombresApellidos: `Steven Sebastian Araujo Moran`,
+    repositorio: `https://www.github.com/stevenaraujo98`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
