@@ -13,6 +13,7 @@ export default class github extends Component {
             repos: null,
             lengs: null,
             tags: null,
+            isNotLoading: false
         }
     }
 
@@ -49,13 +50,14 @@ export default class github extends Component {
         this.setState({lengs: lenguajesData, repos: repositorios, tags: dicEtiq});
         } catch(e){
             console.log(e);
+            this.setState({ isNotLoading: true });
         }
     };
 
     render() {
         
         return (
-        (this.state.repos && this.state.tags) ? 
+        ((this.state.repos && this.state.tags)) ? 
             <>  
                 <div style={{marginBottom: '20px'}}>
                     { this.state.tags && this.state.tags.map((todo) => 
@@ -80,7 +82,9 @@ export default class github extends Component {
             
             </>
         : 
-            <div style={{textAlign: 'center'}}><Spin size="large" /></div>    
+            <div style={{textAlign: 'center'}}>
+                {this.state.isNotLoading ? <p>Error en el api de GitHub</p> : <Spin size="large" />}
+            </div>
         )
     }
 }
