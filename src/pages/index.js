@@ -49,7 +49,7 @@ const IndexPage = () => {
           <Row>
             <Col sm={24} md={12} lg={14} className="cardLeftTitle">
               <Card className="subCardLeftTitle" cover = {<Image/>}>
-                <h1><strong>SSAM</strong></h1>
+                <h1>SSAM</h1>
               </Card>
 
               <div className="redesSociales" style={{padding:'10px', textAlign:'center'}}>
@@ -74,7 +74,7 @@ const IndexPage = () => {
 
             <Col sm={24} md={12} lg={10} className="cardRightTitle">
               <h2>Hola </h2>
-                <p>Soy <strong>{site.siteMetadata.nombresApellidos}</strong></p>
+              <p>Soy <strong>{site.siteMetadata.nombresApellidos}</strong></p>
               <p>Aspirante a Ingeniería en Computación en la Escuela Superior Politécnica del Litoral.</p>
             </Col>
           </Row>
@@ -83,14 +83,15 @@ const IndexPage = () => {
 
     <section className="parallax-2">
       <Card className="cards cardRepo">
-        <h2>
           <Link to={site.siteMetadata.repositorio}>
-            <Tooltip placement="bottom" title='Ver mi repositorios en GitHub' >
-              Repositorios
-            </Tooltip>
+            <h2>
+              <Tooltip placement="bottom" title='Ver mi repositorios en GitHub' >
+                Repositorios
+              </Tooltip>
+            </h2>
           </Link>
-        </h2>
-        <Divider/>
+        
+          <Divider/>
         <GitHub/>
       </Card>
     </section>

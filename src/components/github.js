@@ -60,6 +60,7 @@ export default class github extends Component {
         ((this.state.repos && this.state.tags)) ? 
             <>  
                 <div style={{marginBottom: '20px'}}>
+                    <h3>Lenguajes:</h3>
                     { this.state.tags && this.state.tags.map((todo) => 
                         <Tag icon={
                                 <FontAwesomeIcon icon={['fab', todo.toLowerCase() ]} size="lg" />
@@ -71,9 +72,23 @@ export default class github extends Component {
                 <Row>
                     {this.state.repos && this.state.repos.map((obj, key) => 
                         <Col xs={24} sm={12} md={8}>
+                            {/* html_url para redireccionarlos a la página  
+                                Repo: name
+
+                                Description: description
+
+                                Url: html_url
+                            */}
                             <Card title={`${obj.name}`} className="cardRepoU">
-                                <div className="languagesCardRepoU">
-                                    <p>{obj.lenguajes} </p>
+                                <div className="cardRepoUContent">
+                                    <div className="cardRepoULeng">
+                                        <p><strong>Lenguajes: </strong>{obj.lenguajes} </p>
+                                    </div>
+                                    <div className="cardRepoUDesc">
+                                        <strong>Description:</strong>
+                                        <p>{obj.description} </p>
+                                    </div>
+                                    <a href={obj.html_url}>Ir al repo</a>
                                 </div>
                             </Card>
                         </Col>

@@ -7,10 +7,7 @@
 /* info: #CF117C*/
 /* warning: #D1CF5A */
 /* sucess: #439BD1 */
-.colorPrimary
-{
-  color: #1c9c58;
-}
+
 .colorSecundary
 {
   color: #11BECF;
@@ -34,12 +31,6 @@
 .colorSucess
 {
   color: #439BD1;
-}
-*
-{
-  margin: 0;
-  padding: 0;
-  font-family: 'Inconsolata', 'Inika', 'Roboto', monospace, serif,  sans-serif;
 }
 
 .ant-card-body
@@ -189,11 +180,6 @@
   text-align: center; 
   /*textSizeAdjust:'40px';*/
 }
-.subCardLeftTitle h1
-{
-  font-size: 30px;
-  font-family: 'Inika', 'Roboto', monospace, serif,  sans-serif !important;
-}
 .cardRightTitle
 {
   padding: 30px;
@@ -218,9 +204,11 @@
 {
   box-shadow: 2px 5px 8px #439BD1;
 }
-.languagesCardRepoU
+.cardRepoUContent
 {
-  padding: 5px 20px 0 20px;
+  padding: 5px 20px 10px 20px;
+  height: 180px;
+
 }
 
 /* ////////////////////////////// Demas \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
