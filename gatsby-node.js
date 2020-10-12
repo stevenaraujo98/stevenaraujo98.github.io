@@ -28,3 +28,18 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
         actions.createNode(node)
     })
 }
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === "build-html") {
+      actions.setWebpackConfig({
+        module: {
+          rules: [
+            {
+              test: /react-scroll-button/,
+              use: loaders.null(),
+            },
+          ],
+        },
+      })
+    }
+  }

@@ -44,12 +44,12 @@ const IndexPage = () => {
 
   return (
   <Layout>
-    <ScrollButton 
+    <ScrollButton
         targetId={'inicioDeTodo'}
         behavior={'auto'} 
         buttonBackgroundColor={'red'}
         iconType={'arrow-up'}
-        style= {{fontSize: '40px'}}
+        style= {{fontSize: '24px'}}
     />
 
     <SEO/>{/*Esta retorna Helmet y este es el head del html */}
