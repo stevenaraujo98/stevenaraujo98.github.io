@@ -7,7 +7,8 @@ import SEO from "../components/seo";
 import GitHub from "../components/github";
 
 import { Card, Row, Col, Divider, Tooltip } from 'antd';
-import ScrollButton from 'react-scroll-button';
+//import ScrollButton from 'react-scroll-button';
+import ScrollButton from '../components/scrollButton'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -44,13 +45,7 @@ const IndexPage = () => {
 
   return (
   <Layout>
-    <ScrollButton
-        targetId={'inicioDeTodo'}
-        behavior={'auto'} 
-        buttonBackgroundColor={'red'}
-        iconType={'arrow-up'}
-        style= {{fontSize: '24px'}}
-    />
+    <ScrollButton/>
 
     <SEO/>{/*Esta retorna Helmet y este es el head del html */}
 
