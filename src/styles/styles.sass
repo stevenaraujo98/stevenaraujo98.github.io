@@ -35,3 +35,49 @@ body
 .cardLeftTitle h1
     font-weight: 700
     font-size: 30px
+
+
+//=======================================================
+#btn-mas
+    display: none
+
+.container-btn-float
+    position: fixed
+    bottom: 20px
+    right: 20px
+
+.redes-btn-float a, .icon-mas-btn-float
+    display: block
+    text-decoration: none
+    background: #cc2b2b
+    color: #ffffff
+    width: 55px
+    height: 55px
+    line-height: 55px
+    text-align: center
+    border-radius: 50%
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4)
+    transition: all 500ms ease
+
+.redes-btn-float a:hover
+    background: #ffffff
+    color: #cc2b2b
+
+.redes-btn-float a
+    margin-bottom: -15px
+    opacity: 0
+    visibility: hidden
+
+#btn-mas:checked~ .redes-btn-float a
+    margin-bottom: 10px
+    opacity: 1
+    visibility: visible
+
+.icon-mas-btn-float
+    cursor: pointer
+    background: #f44141
+    font-size: 23px
+
+#btn-mas:checked ~ .mas-btn-float .icon-mas-btn-float
+    transform:  rotate(137deg)
+    font-size: 25px

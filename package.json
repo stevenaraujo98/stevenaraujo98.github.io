@@ -27,7 +27,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "react-parallax": "^3.0.3"
+    "react-parallax": "^3.0.3",
+    "react-scroll-button": "^1.1.2"
   },
   "devDependencies": {
     "prettier": "2.1.2"

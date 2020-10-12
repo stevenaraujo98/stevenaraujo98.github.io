@@ -7,11 +7,13 @@ import SEO from "../components/seo";
 import GitHub from "../components/github";
 
 import { Card, Row, Col, Divider, Tooltip } from 'antd';
+import ScrollButton from 'react-scroll-button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-library.add(fab)
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faPlus)
 
 const IndexPage = () => {
   //MyRedSocialQuery es un nombre para el query
@@ -42,9 +44,17 @@ const IndexPage = () => {
 
   return (
   <Layout>
+    <ScrollButton 
+        targetId={'inicioDeTodo'}
+        behavior={'auto'} 
+        buttonBackgroundColor={'red'}
+        iconType={'arrow-up'}
+        style= {{fontSize: '40px'}}
+    />
+
     <SEO/>{/*Esta retorna Helmet y este es el head del html */}
 
-    <section className="parallax-completo">
+    <section className="parallax-completo" id="inicioDeTodo">
       <Card className="cards cardTitle">
           <Row>
             <Col sm={24} md={12} lg={14} className="cardLeftTitle">
@@ -125,6 +135,25 @@ const IndexPage = () => {
         <p>Cargando...</p>
       </Card>
     </section>
+
+
+    {/* //Boton Flotante de navegacion
+    <div className="container-btn-float">
+      <input type="checkbox" id="btn-mas"/>
+
+      <div className="redes-btn-float">
+        <a className="btn-floating btn-large green" href="/">Menu</a>
+        <a className="btn-floating btn-large green" href="/">Menu</a>
+      </div>
+      
+      <div className="mas-btn-float">
+        <label for="btn-mas" className="icon-mas-btn-float">{}
+          <FontAwesomeIcon icon="plus" />
+        </label>
+      </div>
+    </div>
+    */}
+
 
 
     {/*
