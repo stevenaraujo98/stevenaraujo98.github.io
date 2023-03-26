@@ -16,70 +16,79 @@ const last_posts = posts.slice(0, 3);
     <div class="text-5xl font-bold">I'm Steven Araujo</div>
     <div class="text-3xl py-3 font-bold">Computer Engineering.</div>
     <div class="py-2">
-      <text class="text-lg">
-        I made this template for everyone who needs to create a personal website
-        easily and quickly. This template includes Project Section, CV Section,
-        Store, Paginated Blog, RSS Feed, SEO Friendly, Responsive Desing and 29
-        Visual themes. I hope you find it useful!
+      <text class="text-lg text-justify">
+        <div>
+          I am from Guayaquil, Ecuador. I studied computer engineering at ESPOL
+          University (Escuela Superior Politécnica del Litoral). I like playing
+          guitar and soccer, watching movies, taking photos and traveling to new
+          places. I really enjoy working in a team since I can learn new things
+          from my coworkers. I'm a coder who loves to create cool stuff that
+          represents different challenges and learn from them to improve my
+          experience!
+        </div>
       </text>
-    </div>
-    <div class="mt-8">
-      <a class="btn" href=" " target="_blank">
-        Let's connect!</a
-      >
-      <!-- <a
+      <!-- <div class="mt-8">
+        <a
+          class="btn"
+          href="https://wa.me/+593990337824?text=Hello%20Steven"
+          target="_blank"
+        >
+          Let's connect!</a
+        >
+        <a
         href="https://github.com/manuelernestog/astro-modern-personal -website"
         target="_blank"
         class="btn btn-outline ml-5"
       >
         Get This template</a
-      > -->
+      >
+      </div> -->
     </div>
+
+    <div class="my-5">
+      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    </div>
+
+    <HorizontalCard
+      title="Fullstucks"
+      img="/post_img.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
+      tags={["React"]}
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title="Demo Project 2"
+      img="/post_img.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title="Demo Project 3"
+      img="/post_img.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
+      badge="FOSS"
+    />
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    </div>
+
+    {
+      last_posts.map((post) => (
+        <>
+          <HorizontalCard
+            title={post.data.title}
+            img={post.data.heroImage}
+            desc={post.data.description}
+            url={"/blog/" + post.slug}
+            target="_self"
+          />
+          <div class="divider my-0" />
+        </>
+      ))
+    }
   </div>
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-  </div>
-
-  <HorizontalCard
-    title="Fullstucks"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    tags={['React']}
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
