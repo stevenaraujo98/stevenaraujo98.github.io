@@ -1,3 +1,35 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+/* variable */
+:root {
+    --size-effect: 10.5ch;
+}
+
+.consoleEffect {
+    display: block;
+    /* font-family: monospace; */
+    white-space: nowrap;
+    border-right: 3px solid;
+
+    /* animation: typing 2s steps(12), blink .5s infinite step-end alternate; */
+    animation: blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+/* .cEe {
+    width: var(--size-effect);
+}
+
+.cEs {
+    width: 11.5ch;
+} */
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}

@@ -4,6 +4,15 @@ const colors = require('tailwindcss/colors')
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		screens: {
+			'xs': '575.98px',
+			'sm': '640pxpx',
+			'md': '768px',
+			'lg': '1024px',
+			'xl': '1280px',
+			'2xl': '1536px',
+			// => @media (min-width: 640px) { ... }
+		  },
 		colors: {
 			primary: '#f52e26',
 			secondary: '#026873',
