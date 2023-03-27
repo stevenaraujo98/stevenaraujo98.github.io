@@ -1,15 +1,21 @@
 {
-  "goBackHome": "Regresar a inicio",
+  "cv": {
+    "profile":"Perfil"
+  },
+  "error": {
+    "goBackHome": "Regresar a inicio",
+    "pageNotFound": "Página no encontrada"
+  },
   "home": {
     "computerEngineering": "Ingeniero en Computación",
     "computerEngineering2": "Ingeniero en <0>Computación.</0>",
     "heyThere": "Hola",
     "iAm": "Soy Steven Araujo",
+    "myLastProjects": "Proyectos recientes",
     "presentation": "Soy de Guayaquil, Ecuador. Estudie ingeniería en computación en la universidad Espol(Escuela Superior Politécnica del Litoral). I like playing guitar and soccer, watching movies, taking photos and traveling to new places. I really enjoy working in a team since I can learn new things from my coworkers. I'm a coder who loves to create cool stuff that represents different challenges and learn from them to improve my experience!",
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "title": "Bienvenido"
   },
-  "pageNotFound": "Página no encontrada",
   "sideBar": {
     "contact": "Contacto",
     "home": "Inicio",

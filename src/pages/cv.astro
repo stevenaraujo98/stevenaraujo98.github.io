@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 
@@ -8,7 +8,7 @@ changeLanguage("en");
 
 <BaseLayout title="Resume">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">{t('cv.profile')}</div>
   </div>
 
   <div class="mb-10 text-justify">

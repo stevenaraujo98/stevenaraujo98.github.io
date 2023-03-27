@@ -1,7 +1,8 @@
 ---
-title: "Demo Post 1"
+title: "
+Off-The-Shelf Based System for Urban Environment Video Analytics"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
+pubDate: "Jul 21 2020"
 heroImage: "/post_img.webp"
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "Demo Post 2"
+title: "Intelligent Virtual Assistants: A Look at Their Privacy Issues"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 11 2022"
+pubDate: "Dec 28 2022"
 heroImage: "/post_img.webp"
 ---
 
