@@ -4,7 +4,7 @@
 
 /* variable */
 :root {
-    --size-effect: 10.5ch;
+    --size-effect: 50ch;
 }
 
 .consoleEffect {
@@ -13,9 +13,10 @@
     white-space: nowrap;
     border-right: 3px solid;
 
-    /* animation: typing 2s steps(12), blink .5s infinite step-end alternate; */
-    animation: blink .5s infinite step-end alternate;
+    animation: typing 2s steps(25), blink .5s infinite step-end alternate;
+    /* animation: blink .5s infinite step-end alternate; */
     overflow: hidden;
+    width: var(--size-effect);
 }
 
 /* .cEe {
