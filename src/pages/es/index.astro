@@ -1,6 +1,6 @@
 ---
-import i18next, { t, changeLanguage } from "i18next";
-import { changeLanguage } from "i18next";
+// https://github.com/yassinedoghri/astro-i18next#-translate-routes
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
@@ -14,18 +14,12 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout>
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">{t("home.heyThere")} 👋</div>
-    <div class="text-5xl font-bold">I'm Steven Araujo</div>
-    <div class="text-3xl py-3 font-bold">Computer Engineering.</div>
+    <div class="text-5xl font-bold">{t("home.iAm")}</div>
+    <div class="text-3xl py-3 font-bold">{t("home.computerEngineering")}.</div>
     <div class="py-2">
       <text class="text-lg text-justify">
         <div>
-          I am from Guayaquil, Ecuador. I studied computer engineering at ESPOL
-          University (Escuela Superior Politécnica del Litoral). I like playing
-          guitar and soccer, watching movies, taking photos and traveling to new
-          places. I really enjoy working in a team since I can learn new things
-          from my coworkers. I'm a coder who loves to create cool stuff that
-          represents different challenges and learn from them to improve my
-          experience!
+          {t("home.presentation")}
         </div>
       </text>
       <!-- <div class="mt-8">

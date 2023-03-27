@@ -1,11 +1,13 @@
 ---
-import i18next, { t } from "i18next";
+import i18next from "i18next";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
+import { LanguageSelector } from "astro-i18next/components";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import InfoBanner from "../components/InfoBanner";
 
 const {
   image,
@@ -20,12 +22,19 @@ const {
     <BaseHead title={title} description={description} image={image} />
   </head>
   <body>
+    <!-- <InfoBanner client:load /> -->
     <div class="bg-base-100 drawer drawer-mobile">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col bg-base-100">
         <Header title={SITE_TITLE} />
         <div class="md:flex md:justify-center">
           <main class="p-6 pt-10 max-w-[900px]">
+            <div class="hidden lg:flex mx-auto justify-end">
+              <LanguageSelector
+                class="h-full rounded-md border-0 bg-transparent bg-none py-2 pl-2 pr-3 text-gray-900 font-medium focus:ring-2 focus:ring-inset focus:ring-emerald-800 sm:text-sm"
+                aria-label="languageSelector"
+              />
+            </div>
             <slot />
           </main>
         </div>

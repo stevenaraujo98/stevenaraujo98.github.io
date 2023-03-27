@@ -1,11 +1,21 @@
 {
-    "site": {
-      "title": "My awesome website!",
-      "description": "Here is the description of my awesome website!"
-    },
-    "home": {
-        "heyThere": "Hey there",
-      "title": "Welcome to my awesome website!",
-      "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
-    }
+  "goBackHome": "Go back home",
+  "home": {
+    "computerEngineering": "Computer Engineering",
+    "heyThere": "Hey there",
+    "iAm": "I'm Steven Araujo",
+    "presentation": "I am from Guayaquil, Ecuador. I studied computer engineering at ESPOL University (Escuela Superior Politécnica del Litoral). I like playing guitar and soccer, watching movies, taking photos and traveling to new places. I really enjoy working in a team since I can learn new things from my coworkers. I'm a coder who loves to create cool stuff that represents different challenges and learn from them to improve my experience!",
+    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+    "title": "Welcome to my awesome website!"
+  },
+  "pageNotFound": "Page not found",
+  "sideBar": {
+    "contact": "Contact",
+    "home": "Home",
+    "projects": "Projects"
+  },
+  "site": {
+    "title": "My awesome website!",
+    "description": "Here is the description of my awesome website!"
   }
+}
