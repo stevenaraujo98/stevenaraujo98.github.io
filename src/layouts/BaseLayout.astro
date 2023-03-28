@@ -16,16 +16,22 @@ const {
 } = Astro.props;
 
 const conjunto = {
-  "es": true,
-  "cv": true,
-  "projects": true,
-  "blog": true,
+  es: true,
+  cv: true,
+  projects: true,
+  blog: true,
+  paper: true,
 };
 const localeArray = Astro.url.pathname.split("/");
 const locale = localeArray[localeArray.length - 1];
+const localeSecond = localeArray[localeArray.length - 2];
 
 let mostrar = false;
-if(conjunto[locale] || (locale.length === 0 && localeArray.length === 2)){
+if (
+  conjunto[locale] ||
+  (conjunto[localeSecond] && locale.length === 0) ||
+  (locale.length === 0 && localeArray.length === 2)
+) {
   mostrar = true;
 }
 ---
@@ -44,12 +50,14 @@ if(conjunto[locale] || (locale.length === 0 && localeArray.length === 2)){
         <div class="md:flex md:justify-center">
           <main class="p-6 pt-10 max-w-[900px]">
             {
-            mostrar && <div class="hidden lg:flex mx-auto justify-end">
-              <LanguageSelector
-                class="h-full rounded-md border-0 bg-transparent bg-none py-2 pl-2 pr-3 text-gray-900 font-medium focus:ring-2 focus:ring-inset focus:ring-emerald-800 sm:text-sm cursor-grab"
-                aria-label="languageSelector"
-              />
-            </div>
+              mostrar && (
+                <div class="hidden lg:flex mx-auto justify-end">
+                  <LanguageSelector
+                    class="h-full rounded-md border-0 bg-transparent bg-none py-2 pl-2 pr-3 text-gray-900 font-medium focus:ring-2 focus:ring-inset focus:ring-emerald-800 sm:text-sm cursor-grab"
+                    aria-label="languageSelector"
+                  />
+                </div>
+              )
             }
             <slot />
           </main>

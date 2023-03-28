@@ -50,7 +50,7 @@ const InfoBanner = () => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          Descubre Fullstucks - ayudamos a potenciar ti negocio.
+          Descubre Fullstucks - ayudamos a potenciar tu negocio.
           {/* Join us in Denver from June 7 – 9 to see what’s coming next. */}
         </p>
         <a
@@ -58,7 +58,7 @@ const InfoBanner = () => {
           target="_blank"
           className="flex-none rounded-full bg-gray-900 py-1 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
-          Visitar ya <span aria-hidden="true">→</span>
+          Saber más <span aria-hidden="true">→</span>
         </a>
       </div>
       <div className="flex flex-1 justify-end">

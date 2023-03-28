@@ -1,0 +1,36 @@
+---
+import { changeLanguage } from "i18next";
+import { CollectionEntry, getCollection } from "astro:content";
+import { BlogSchema } from "../../../content/config";
+import PostLayout from "../../../layouts/PostLayout.astro";
+
+changeLanguage("es");
+
+export async function getStaticPaths() {
+    const paperEntries = await getCollection("paper");
+    return paperEntries.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+interface Props {
+    entry: CollectionEntry<"paper">;
+}
+const { entry } = Astro.props;
+const post: BlogSchema = entry.data;
+const { Content } = await entry.render();
+---
+
+<PostLayout
+  title={post.title}
+  heroImage={post.heroImage}
+  description={post.description}
+  pubDate={post.pubDate}
+  updatedDate={post.updatedDate}
+  dateOfConference={post.dateOfConference}
+  publishedIn={post.publishedIn}
+  publisher={post.publisher}
+  url={post.url}
+>
+  <Content />
+</PostLayout>

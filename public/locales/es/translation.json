@@ -1,21 +1,28 @@
 {
+  "back": "Atras",
+  "computerEngineering": "Ingeniero en Ciencias de la Computación",
   "cv": {
-    "profile":"Perfil"
+    "certifications": "Certificaciones",
+    "education": "Educación",
+    "experience": "Experiencia",
+    "intro": "Ingeniero en Ciencias de la computación con 4 años + de experiencia en desarrollado de software. Dominando varios lenguajes de programación, frameworks. Experiencia en desarrollo web, machine learning, procesamiento de imagenes, procesamiento de datos y dirigiendo proyectos. Work with Data Base handled systems, as well as design, normalization and migration.",
+    "profile": "Perfil",
+    "skills": "Habilidades"
   },
   "error": {
     "goBackHome": "Regresar a inicio",
     "pageNotFound": "Página no encontrada"
   },
   "home": {
-    "computerEngineering": "Ingeniero en Computación",
-    "computerEngineering2": "Ingeniero en <0>Computación.</0>",
+    "computerEngineering": "Ingeniero en <0>Computación.</0>",
     "heyThere": "Hola",
     "iAm": "Soy Steven Araujo",
     "myLastProjects": "Proyectos recientes",
-    "presentation": "Soy de Guayaquil, Ecuador. Estudie ingeniería en computación en la universidad Espol(Escuela Superior Politécnica del Litoral). I like playing guitar and soccer, watching movies, taking photos and traveling to new places. I really enjoy working in a team since I can learn new things from my coworkers. I'm a coder who loves to create cool stuff that represents different challenges and learn from them to improve my experience!",
+    "presentation": "Soy de Guayaquil, Ecuador. Estudie ingeniería en computación en la universidad Espol(Escuela Superior Politécnica del Litoral). Me gusta jugar fútbol, tocar guitarra, la fotografía, ver peliculas y viajar a nuevos lugares. Me gusta el trabajo en equipo y aprender nuevas cosas de mis compañeros. Soy un desarrollado que ama crear cosas que sean un reto y aprender de ello para mejorar mi experiencia!",
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "title": "Bienvenido"
   },
+  "showPub": "Mostrar Publicación",
   "sideBar": {
     "contact": "Contacto",
     "home": "Inicio",

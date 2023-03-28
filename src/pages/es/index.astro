@@ -10,20 +10,20 @@ import { getCollection } from "astro:content";
 
 changeLanguage("es");
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const last_posts = posts.slice(0, 3);
+const papers = (await getCollection("paper")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const last_papers = papers.slice(0, 3);
 ---
 
 <BaseLayout>
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">{t("home.heyThere")} 👋</div>
     <div class="text-5xl font-bold">{t("home.iAm")}</div>
-    <div class="text-3xl mb-2 mt-5 pb-1 font-bold flex flex-col xs:flex-row gap-2 consoleEffect max-w-min">
+    <div
+      class="text-3xl mb-2 mt-5 pb-1 font-bold flex flex-col xs:flex-row gap-2 consoleEffect max-w-min"
+    >
       <Trans i18nKey="home.computerEngineering2">
         Computer
-        <span class="mb-2 pb-2">
-          Engineering.
-        </span>
+        <span class="mb-2 pb-2"> Engineering.</span>
       </Trans>
     </div>
     <div class="py-2">
@@ -51,30 +51,32 @@ const last_posts = posts.slice(0, 3);
     </div>
 
     <div class="my-5">
-      <div class="text-3xl w-full font-bold mb-2">{t('home.myLastProjects')} {"</>"}</div>
+      <div class="text-3xl w-full font-bold mb-2">
+        {t("home.myLastProjects")}
+        {"</>"}
+      </div>
     </div>
 
     <HorizontalCard
       title="Fullstucks"
       img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
-      tags={["React"]}
+      desc="Administrador web para Snapship curier de Quito."
+      badge="Freelance"
+      url="https://fullstucks.com/"
     />
     <div class="divider my-0"></div>
     <HorizontalCard
       title="SnapShip"
       img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
+      desc="Administrador web para Snapship curier de Quito."
+      url="https://snapship-ec.com/"
+      tags={["React", "NestJS", "Docker", "Flask"]}
     />
     <div class="divider my-0"></div>
     <HorizontalCard
       title="Helpet"
       img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
-      badge="FOSS"
+      desc="Aplicativo web para veterinaria con la funcionalidad de ratreo de mascota con GPS en tiempo real."
     />
 
     <div>
@@ -82,13 +84,13 @@ const last_posts = posts.slice(0, 3);
     </div>
 
     {
-      last_posts.map((post) => (
+      last_papers.map((post) => (
         <>
           <HorizontalCard
             title={post.data.title}
             img={post.data.heroImage}
             desc={post.data.description}
-            url={"/blog/" + post.slug}
+            url={"/paper/" + post.slug}
             target="_self"
           />
           <div class="divider my-0" />

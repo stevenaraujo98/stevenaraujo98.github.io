@@ -1,21 +1,28 @@
 {
+  "back": "Back",
+  "computerEngineering": "Computer Engineering",
   "cv": {
-    "profile":"Profile"
+    "certifications": "Certifications",
+    "education": "Education",
+    "experience": "Experience",
+    "intro": "Computer Engineering with 4 years + of experience in software development.Dominion of various programming languages, frameworks. Experience in WEB design, machine learning, image processing and development. Work with Data Base handled systems, as well as design, normalization and migration.",
+    "profile": "Profile",
+    "skills": "Skills"
   },
   "error": {
     "goBackHome": "Go back home",
     "pageNotFound": "Page not found"
   },
   "home": {
-    "computerEngineering": "Computer Engineering",
-    "computerEngineering2": "Computer <0>Engineering.</0>",
+    "computerEngineering": "Computer <0>Engineering.</0>",
     "heyThere": "Hey there",
     "iAm": "I'm Steven Araujo",
     "myLastProjects": "My last projects",
-    "presentation": "I am from Guayaquil, Ecuador. I studied computer engineering at ESPOL University (Escuela Superior Politécnica del Litoral). I like playing guitar and soccer, watching movies, taking photos and traveling to new places. I really enjoy working in a team since I can learn new things from my coworkers. I'm a coder who loves to create cool stuff that represents different challenges and learn from them to improve my experience!",
+    "presentation": "I am from Guayaquil, Ecuador. I studied computer engineering at ESPOL University (Escuela Superior Politécnica del Litoral). I like playing guitar, soccer, watching movies, taking photos and traveling to new places. I really enjoy working in a team since I can learn new things from my coworkers. I'm a coder who loves to create cool stuff that represents different challenges and learn from them to improve my experience!",
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "title": "Welcome to my awesome website!"
   },
+  "showPub": "Show Pub",
   "sideBar": {
     "contact": "Contact",
     "home": "Home",

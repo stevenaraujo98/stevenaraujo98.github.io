@@ -8,30 +8,26 @@ changeLanguage("en");
 
 <BaseLayout title="Resume">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">{t('cv.profile')}</div>
+    <div class="text-3xl w-full font-bold">{t("cv.profile")}</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Computer Engineering with 4 years + of experience in software development.
-    Dominion of various programming languages, frameworks, CMS and graphics
-    engines. Experience in WEB design, machine learning, image processing and
-    development. Work with Data Base handled systems, as well as design,
-    normalization and migration.
+    {t("cv.intro")}
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
+    <div class="text-3xl w-full font-bold">{t("cv.education")}</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Computer Engineering"
+      title={t("computerEngineering")}
       subtitle="2016 to 2022 at Escuela Superior Politecnica del Litoral (ESPOL), Guayaquil, Ecuador"
     />
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">{t("cv.experience")}</div>
   </div>
 
   <div class="time-line-container mb-10">
@@ -58,7 +54,7 @@ changeLanguage("en");
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">{t("cv.certifications")}</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
@@ -78,32 +74,31 @@ changeLanguage("en");
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">{t("cv.skills")}</div>
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
     <li>Spanish (Native)</li>
-    <li>English (C2)</li>
+    <li>English (B2)</li>
     <li>JavaScript</li>
     <li>C++</li>
     <li>PHP</li>
-    <li>Ruby</li>
+    <li>Python</li>
     <li>Postgres SQL</li>
     <li>MySQL</li>
+    <li>MongoDB</li>
+    <li>SnowFlake</li>
+    <li>Spark</li>
     <li>CSS</li>
     <li>SASS</li>
     <li>HTML</li>
     <li>Node.js</li>
-    <li>Ruby on Rails</li>
-    <li>AngularJS</li>
+    <li>React</li>
+    <li>NextJs</li>
     <li>VUE</li>
     <li>Astro</li>
-    <li>Symfony 3</li>
-    <li>Yii2</li>
     <li>Bootstrap</li>
     <li>Taildwind</li>
-    <li>JQuery</li>
-    <li>Wordpress</li>
     <li>Git</li>
     <li>Jira</li>
     <li>Trello</li>
@@ -117,6 +112,6 @@ changeLanguage("en");
     <li>Image Manipulation</li>
     <li>Office Suite</li>
     <li>Adobe Photoshop</li>
-    <li>KdenLive</li>
+    <li>Adobe Lightroom</li>
   </ul>
 </BaseLayout>
