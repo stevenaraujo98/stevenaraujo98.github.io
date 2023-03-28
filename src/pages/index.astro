@@ -10,9 +10,7 @@ import { getCollection } from "astro:content";
 
 changeLanguage("en");
 
-const papers = (await getCollection("paper")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const papers = (await getCollection("paper")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const last_papers = papers.slice(0, 3);
 ---
 
