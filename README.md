@@ -8,6 +8,11 @@ Modern Personal Website Template with Project Section, CV Section, Paginated Blo
 
 View a live demo of the [Astro Modern Personal Website](https://astro-modern-personal-website.netlify.app/)
 
+<a href="https://es.vecteezy.com/vectores-gratis/sa">Sa Vectores por Vecteezy</a>
+https://es.vecteezy.com/arte-vectorial/3649871-sa-logo-monogram-with-sword-element-ribbon-design-template
+<a href="https://es.vecteezy.com/vectores-gratis/sa">Sa Vectores por Vecteezy</a>
+https://es.vecteezy.com/arte-vectorial/7520801-alfabeto-letras-iniciales-monograma-logo-sa-as-s-and-a
+
 ## Installation
 
 Run the following command in your terminal
