@@ -2,20 +2,22 @@
 
 ![Astro Modern Personal Website](public/social_img.png)
 
-Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
+Modern Personal Website with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
 
-## Demo
+## SA
 
 View a live demo of the [Astro Modern Personal Website](https://astro-modern-personal-website.netlify.app/)
+Steven Araujo [Astro Modern Personal Website](https://stevenaraujo98.github.io/)
 
-<a href="https://es.vecteezy.com/vectores-gratis/sa">Sa Vectores por Vecteezy</a>
+<a href="https://es.vecteezy.com/vectores-gratis/sa">Sa Vectores por Vecteezy</a>  
 https://es.vecteezy.com/arte-vectorial/3649871-sa-logo-monogram-with-sword-element-ribbon-design-template
-<a href="https://es.vecteezy.com/vectores-gratis/sa">Sa Vectores por Vecteezy</a>
+<a href="https://es.vecteezy.com/vectores-gratis/sa">Sa Vectores por Vecteezy</a>  
 https://es.vecteezy.com/arte-vectorial/7520801-alfabeto-letras-iniciales-monograma-logo-sa-as-s-and-a
 
 ## Installation
 
 Run the following command in your terminal
+Use node 20
 
 ```bash
 npm install
