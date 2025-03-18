@@ -5,7 +5,7 @@
     "certifications": "Certificaciones",
     "education": "Educación",
     "experience": "Experiencia",
-    "intro": "Ingeniero en Ciencias de la computación con 4 años + de experiencia en desarrollado de software. Dominando varios lenguajes de programación, frameworks. Experiencia en desarrollo web, machine learning, procesamiento de imagenes, procesamiento de datos y dirigiendo proyectos. Work with Data Base handled systems, as well as design, normalization and migration.",
+    "intro": "Ingeniero en Computación con más de 5 años de experiencia en desarrollo de software. Dominio de diversos lenguajes de programación y frameworks. Amplia experiencia en desarrollo web, aprendizaje automático, procesamiento de imágenes e inteligencia artificial. Habilidad en sistemas de gestión de bases de datos, incluyendo diseño, normalización, migración y optimización. Máster en Inteligencia Artificial finalizado en la Universidad Internacional de La Rioja (UNIR), con enfoque en técnicas avanzadas de IA, aprendizaje automático y soluciones basadas en datos. Experiencia en gestión de proyectos, trabajo en equipo y uso de tecnologías modernas como Python, React, Django, TensorFlow y Docker.",
     "profile": "Perfil",
     "skills": "Habilidades"
   },
@@ -22,6 +22,7 @@
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "title": "Bienvenido"
   },
+  "masterArtificialIntelligence": "Master en Inteligencia Artificial",
   "showPub": "Mostrar Publicación",
   "sideBar": {
     "contact": "Contacto",

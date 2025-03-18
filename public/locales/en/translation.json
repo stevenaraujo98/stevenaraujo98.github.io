@@ -5,7 +5,7 @@
     "certifications": "Certifications",
     "education": "Education",
     "experience": "Experience",
-    "intro": "Computer Engineering with 4 years + of experience in software development.Dominion of various programming languages, frameworks. Experience in WEB design, machine learning, image processing and development. Work with Data Base handled systems, as well as design, normalization and migration.",
+    "intro": "Computer Engineer with over 5 years of experience in software development. Proficient in various programming languages and frameworks. Extensive experience in web development, machine learning, image processing, and artificial intelligence. Skilled in database management systems, including design, normalization, migration, and optimization. Completed a Master's in Artificial Intelligence at Universidad Internacional de La Rioja (UNIR), with a focus on advanced AI techniques, machine learning, and data-driven solutions. Experienced in project management, teamwork, and the use of modern technologies such as Python, React, Django, TensorFlow, and Docker.",
     "profile": "Profile",
     "skills": "Skills"
   },
@@ -22,6 +22,7 @@
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "title": "Welcome to my awesome website!"
   },
+  "masterArtificialIntelligence": "Master Artificial Intelligence",
   "showPub": "Show Pub",
   "sideBar": {
     "contact": "Contact",

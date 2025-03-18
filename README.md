@@ -16,8 +16,8 @@ https://es.vecteezy.com/arte-vectorial/7520801-alfabeto-letras-iniciales-monogra
 
 ## Installation
 
-Run the following command in your terminal
-Use node 20
+Run the following command in your terminal.  
+Use node 20.
 
 ```bash
 npm install
