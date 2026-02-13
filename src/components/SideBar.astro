@@ -31,6 +31,11 @@ import { localizePath } from "astro-i18next";
       <!-- <li><a href="/store">Store</a></li> -->
       <!-- <li><a href={localizePath("/blog")}>Blog</a></li> -->
       <li><a href={localizePath("/paper")}>{t("sideBar.publications")}</a></li>
+      <li>
+        <a href={localizePath("/certifications")}
+          >{t("sideBar.certifications")}</a
+        >
+      </li>
       <li><a href={localizePath("/cv")}>CV</a></li>
       <li>
         <a href="mailto:steven.araujo@hotmail.com">{t("sideBar.contact")}</a>

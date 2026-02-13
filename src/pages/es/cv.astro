@@ -2,6 +2,7 @@
 import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TimeLineElement from "../../components/cv/TimeLine.astro";
+import { certifications } from "../../data/certifications";
 
 changeLanguage("es");
 ---
@@ -141,81 +142,16 @@ changeLanguage("es");
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"
-        >AWS Machine Learning Foundations - UNIR (Jan. 2026)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >AI Agents with LangGraph Course - Platzi (Dec. 2025)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >Prompt Engineering Course - Platzi (Dec. 2025)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank">AI Agents Course - Platzi (Dec. 2025)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank">ChatGPT Course - Platzi (Jan. 2026)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >Best Presentation Award RCVE 2025 (Jun. 2025)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >Advanced University Course in Artificial Intelligence and Data
-        Engineering - UNIR (Apr. 2025)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >Python Programming Course - UNIR (Apr. 2025)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >Continuing Education Certificate in Leadership - MIU (May 2024)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank">Triplebyte Certified (Jan. 2023)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >Databricks Essentials for Spark Developers (Azure and AWS) - Udemy
-        (Mar. 2022)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >Spark and Python for Big Data with PySpark - Udemy (Feb. 2022)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >React Hooks: Initial Guide using Redux and Material.UI - Udemy (Oct.
-        2020)</a
-      >
-    </li>
-    <li>
-      <a href="#" target="_blank"
-        >How Google does Machine Learning (Spanish) - Coursera (Sept. 2020)</a
-      >
-    </li>
-    <li>
-      <a
-        href="https://certiprof.com/pages/scrum-foundation-professional-certificate-sfpc-en-sp"
-        target="_blank"
-      >
-        Scrum Foundation Professional Certificate (SFPC)</a
-      >
-    </li>
+    {
+      certifications.map((cert) => (
+        <li>
+          <a href={cert.url || "#"} target="_blank">
+            {cert.title} {cert.issuer && `- ${cert.issuer}`}{" "}
+            {cert.date && `(${cert.date})`}
+          </a>
+        </li>
+      ))
+    }
   </ul>
 
   <div class="mb-5">
