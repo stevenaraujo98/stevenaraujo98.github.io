@@ -5,7 +5,7 @@
     "certifications": "Certifications",
     "education": "Education",
     "experience": "Experience",
-    "intro": "Computer Engineer with over 5 years of experience in software development. Proficient in various programming languages and frameworks. Extensive experience in web development, machine learning, image processing, and artificial intelligence. Skilled in database management systems, including design, normalization, migration, and optimization. Completed a Master's in Artificial Intelligence at Universidad Internacional de La Rioja (UNIR), with a focus on advanced AI techniques, machine learning, and data-driven solutions. Experienced in project management, teamwork, and the use of modern technologies such as Python, React, Django, TensorFlow, and Docker.",
+    "intro": "Computer Engineer and AI Developer with over 5 years of experience in software development. Extensive experience in web development, machine learning, computer vision, and artificial intelligence. Skilled in database management systems, including design, normalization, migration, and optimization. Currently working as an AI Developer at ESPOL, specializing in Deep Learning and Mamba-based architectures. Completed a Master's in Artificial Intelligence at UNIR, focusing on advanced AI techniques and data-driven solutions. Experienced in modern technologies such as Python, TensorFlow, PyTorch, React, and Docker, delivering scalable solutions through innovation.",
     "profile": "Profile",
     "skills": "Skills"
   },
@@ -18,7 +18,7 @@
     "heyThere": "Hey there",
     "iAm": "I'm Steven Araujo",
     "myLastProjects": "My last projects",
-    "presentation": "I am from Guayaquil, Ecuador. I studied computer engineering at ESPOL University (Escuela Superior Politécnica del Litoral). I like playing guitar, soccer, watching movies, taking photos and traveling to new places. I really enjoy working in a team since I can learn new things from my coworkers. I'm a coder who loves to create cool stuff that represents different challenges and learn from them to improve my experience!",
+    "presentation": "I am from Guayaquil, Ecuador, and hold a Computer Engineering degree from ESPOL University, along with a Master's in Artificial Intelligence from UNIR. Currently working as an AI Developer at ESPOL, I specialize in computer vision and deep learning. Beyond code, I enjoy playing guitar, soccer, photography, and traveling. I thrive in collaborative environments and am passionate about building innovative solutions that push the boundaries of technology!",
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "title": "Welcome to my awesome website!"
   },
@@ -27,7 +27,8 @@
   "sideBar": {
     "contact": "Contact",
     "home": "Home",
-    "projects": "Projects"
+    "projects": "Projects",
+    "publications": "Publications"
   },
   "site": {
     "title": "My awesome website!",

@@ -32,24 +32,7 @@ const last_papers = papers.slice(0, 3);
           {t("home.presentation")}
         </div>
       </p>
-      <!-- <div class="mt-8">
-        <a
-          class="btn"
-          href="https://wa.me/+593990337824?text=Hello%20Steven"
-          target="_blank"
-        >
-          Let's connect!</a
-        >
-        <a
-        href="https://github.com/manuelernestog/astro-modern-personal -website"
-        target="_blank"
-        class="btn btn-outline ml-5"
-      >
-        Get This template</a
-      >
-      </div> -->
     </div>
-
     <div class="my-5">
       <div class="text-3xl w-full font-bold mb-2">
         {t("home.myLastProjects")}
@@ -57,6 +40,14 @@ const last_papers = papers.slice(0, 3);
       </div>
     </div>
 
+    <HorizontalCard
+      title="SambaSportAI"
+      img="/post_img.webp"
+      desc="Mamba-based platform for multi-view foul recognition in soccer. Artificial Intelligence applied to sports."
+      url="#"
+      badge="In Progress"
+    />
+    <div class="divider my-0"></div>
     <HorizontalCard
       title="Fullstucks"
       img="/post_img.webp"
@@ -72,15 +63,9 @@ const last_papers = papers.slice(0, 3);
       url="https://snapship-ec.com/"
       tags={["React", "NestJS", "Docker", "Flask"]}
     />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-      title="Helpet"
-      img="/post_img.webp"
-      desc="Aplicativo web para veterinaria con la funcionalidad de ratreo de mascota con GPS en tiempo real."
-    />
 
     <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Papers</div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">Publications</div>
     </div>
 
     {

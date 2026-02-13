@@ -59,6 +59,7 @@ This is a personal website for Steven Araujo. It is a static site built with Ast
 ## Instructions
 
 ALways, not matter what, use camelCase for variable names, function names, and file names.
+Use `npm run dev` to start the development server, don't use `npm run build` to test the project.
 
 ## Repository expectations
 

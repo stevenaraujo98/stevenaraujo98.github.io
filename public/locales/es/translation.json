@@ -5,7 +5,7 @@
     "certifications": "Certificaciones",
     "education": "Educación",
     "experience": "Experiencia",
-    "intro": "Ingeniero en Computación con más de 5 años de experiencia en desarrollo de software. Dominio de diversos lenguajes de programación y frameworks. Amplia experiencia en desarrollo web, aprendizaje automático, procesamiento de imágenes e inteligencia artificial. Habilidad en sistemas de gestión de bases de datos, incluyendo diseño, normalización, migración y optimización. Máster en Inteligencia Artificial finalizado en la Universidad Internacional de La Rioja (UNIR), con enfoque en técnicas avanzadas de IA, aprendizaje automático y soluciones basadas en datos. Experiencia en gestión de proyectos, trabajo en equipo y uso de tecnologías modernas como Python, React, Django, TensorFlow y Docker.",
+    "intro": "Ingeniero en Computación y Desarrollador de IA con más de 5 años de experiencia en desarrollo de software. Amplia experiencia en desarrollo web, aprendizaje automático, visión por computadora e inteligencia artificial. Habilidad en sistemas de gestión de bases de datos, incluyendo diseño, normalización, migración y optimización. Actualmente trabajo como Desarrollador de IA en ESPOL, especializándome en Aprendizaje Profundo y arquitecturas basadas en Mamba. Completé un Máster en Inteligencia Artificial en la UNIR, enfocado en técnicas avanzadas de IA y soluciones basadas en datos. Experto en tecnologías modernas como Python, TensorFlow, PyTorch, React y Docker, creando soluciones escalables a través de la innovación.",
     "profile": "Perfil",
     "skills": "Habilidades"
   },
@@ -18,7 +18,7 @@
     "heyThere": "Hola",
     "iAm": "Soy Steven Araujo",
     "myLastProjects": "Proyectos recientes",
-    "presentation": "Soy de Guayaquil, Ecuador. Estudie ingeniería en computación en la universidad Espol(Escuela Superior Politécnica del Litoral). Me gusta jugar fútbol, tocar guitarra, la fotografía, ver peliculas y viajar a nuevos lugares. Me gusta el trabajo en equipo y aprender nuevas cosas de mis compañeros. Soy un desarrollado que ama crear cosas que sean un reto y aprender de ello para mejorar mi experiencia!",
+    "presentation": "Soy de Guayaquil, Ecuador, Ingeniero en Computación por la ESPOL y Máster en Inteligencia Artificial por la UNIR. Actualmente trabajo como Desarrollador de IA en ESPOL, especializándome en visión por computadora y aprendizaje profundo. Más allá del código, disfruto tocar la guitarra, el fútbol, la fotografía y viajar. Me apasiona el trabajo colaborativo y crear soluciones innovadoras que desafíen los límites de la tecnología!",
     "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
     "title": "Bienvenido"
   },
@@ -27,7 +27,8 @@
   "sideBar": {
     "contact": "Contacto",
     "home": "Inicio",
-    "projects": "Proyectos"
+    "projects": "Proyectos",
+    "publications": "Publicaciones"
   },
   "site": {
     "title": "My awesome website!",
